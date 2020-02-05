@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>ISS View</title>
+		<link rel="stylesheet" href="styles/styles.css" />
+	</head>
+	<body>
+		<h1>ISS View</h1>
+		<p>
+			Latitude: <span id="lat"></span><br />
+			Longitude: <span id="lon"></span><br />
+			Altitude: <span id="alt"></span><br />
+			Velocity: <span id="vel"></span> <span id="units"></span>
+		</p>
+    <button id="change-units">imperial/metric</button>
+    <br><br>
+		<div id="map"></div>
+	</body>
+	<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-kGaqqn3jQWFV_UUegcVtUtpdESQpCAM"
+	></script>
+	<script src="scripts/iss-location.js"></script>
+</html>
